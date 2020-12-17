@@ -1,10 +1,16 @@
 import React from "react";
 
-const Pricing = ({prices}) => (
-  <div>
-    <h4>Pricing</h4>
-    <p>£££££££</p>
-  </div>
-);
+
+const Pricing = ({prices}) => {
+
+  console.log({prices});
+
+  return (
+    <>
+      <h4>Pricing</h4>
+      <p>££££££</p>
+    </>
+  );
+}
 
 export default Pricing;
