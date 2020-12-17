@@ -4,6 +4,8 @@ import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
 import About from "./components/About";
 import Home from "./components/Home";
 import Pricing from "./components/Pricing";
+import NavBar from './components/NavBar';
+
 
 const App = ()=> {
 
@@ -18,9 +20,10 @@ const App = ()=> {
   return (
     <Router>
       <>
+        <NavBar />
         <Route exact path="/" component={Home} />
         <Route path="/about" component={About} />
-        <Route path="/pricing-page" component={Pricing} />
+        <Route path="/pricing" component={Pricing} />
       </>
     </Router>
   )
