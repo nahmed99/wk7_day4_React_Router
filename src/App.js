@@ -5,6 +5,7 @@ import About from "./components/About";
 import Home from "./components/Home";
 import Pricing from "./components/Pricing";
 import NavBar from './components/NavBar';
+import ErrorPage from './components/ErrorPage';
 
 
 const App = ()=> {
@@ -37,6 +38,8 @@ const App = ()=> {
           <Route path="/pricing" 
                  render={ () => <Pricing prices={pricing} /> }
            />
+          <Route component={ErrorPage} />
+
       </>
     </Router>
   )
